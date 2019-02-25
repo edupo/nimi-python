@@ -9,11 +9,6 @@ enums_codegen_method = {
 }
 
 enums_additional_enums = {
-    'BoolEnableDisable': {},  # Delete because boolean values only
-    'BoolEnableDisableChan': {},  # Delete because boolean values only
-    'BoolEnableDisableIQ': {},  # Delete because boolean values only
-    'BoolEnableDisableRealtime': {},  # Delete because boolean values only
-    'BoolEnableDisableTIS': {},  # Delete because boolean values only
 }
 
 # Override names that can't be directly converted from C names into valid Python names
