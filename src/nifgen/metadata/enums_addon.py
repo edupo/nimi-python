@@ -9,6 +9,37 @@ enums_codegen_method = {
     'CalADCInput': { 'codegen_method': 'no', },  # Calibration Enum - not supported in Python
 }
 
+enums_override_values = {
+    'ReferenceClockSource': { 'values': {
+        0: { 'name': 'NIFGEN_VAL_CLOCK_IN', },
+        1: { 'name': 'NIFGEN_VAL_NONE', },
+        2: { 'name': 'NIFGEN_VAL_ONBOARD_REFERENCE_CLOCK', },
+        3: { 'name': 'NIFGEN_VAL_PXI_CLOCK', },
+        4: { 'name': 'NIFGEN_VAL_RTSI_7', },
+    }, },
+    'SampleClockSource': { 'values': {
+        0: { 'name': 'NIFGEN_VAL_CLOCK_IN', },
+        1: { 'name': 'NIFGEN_VAL_DDC_CLOCK_IN', },
+        2: { 'name': 'NIFGEN_VAL_ONBOARD_CLOCK', },
+        3: { 'name': 'NIFGEN_VAL_PXI_STAR_LINE', },
+        4: { 'name': 'NIFGEN_VAL_PXI_TRIGGER_LINE_0RTSI_0', },
+        5: { 'name': 'NIFGEN_VAL_PXI_TRIGGER_LINE_1RTSI_1', },
+        6: { 'name': 'NIFGEN_VAL_PXI_TRIGGER_LINE_2RTSI_2', },
+        7: { 'name': 'NIFGEN_VAL_PXI_TRIGGER_LINE_3RTSI_3', },
+        8: { 'name': 'NIFGEN_VAL_PXI_TRIGGER_LINE_4RTSI_4', },
+        9: { 'name': 'NIFGEN_VAL_PXI_TRIGGER_LINE_5RTSI_5', },
+        10: { 'name': 'NIFGEN_VAL_PXI_TRIGGER_LINE_6RTSI_6', },
+        11: { 'name': 'NIFGEN_VAL_PXI_TRIGGER_LINE_7RTSI_7', },
+    }, },
+    'SampleClockTimebaseSource': { 'values': {
+        0: { 'name': 'NIFGEN_VAL_CLOCK_IN', },
+        1: { 'name': 'NIFGEN_VAL_ONBOARD_CLOCK', },
+    }, },
+    'MarkerEventOutputBehavior': { 'values': {
+        2: { 'name': 'NIFGEN_VAL_TOGGLE', },
+    }, },
+}
+
 enums_additional_enums = {
     'RelativeTo': {
         'values': [

@@ -16,6 +16,7 @@ enums_override_values = {
     'Function': { 'values': {
         4: { 'python_name': 'TWO_WIRE_RES', },
         5: { 'python_name': 'FOUR_WIRE_RES', },
+        8: { 'name': 'NIDMM_VAL_TEMPERATURE', },
     }, },
     'ThermistorType': { 'values': {
         1: { 'python_name': 'TEMP_THERMISTOR_THERMISTOR_44004', },
