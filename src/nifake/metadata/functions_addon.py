@@ -30,6 +30,7 @@ functions_locking = {
     'close':                           { 'use_session_lock': False,  },  # Session not valid during complete function call so cannot use session locking
     'error_message':                   { 'use_session_lock': False,  },  # No Session for function call so cannot use session locking
     'GetError':                        { 'use_session_lock': False,  },  # Session may not be valid during function call so cannot use session locking
+    'GetErrorMessage':                 { 'use_session_lock': False,  },  # Session may not be valid during function call so cannot use session locking
 }
 
 # Attach the given parameter to the given enum from enums.py
@@ -44,6 +45,7 @@ functions_enums = {
 # This is the additional metadata needed by the code generator in order create code that can properly handle buffer allocation.
 functions_buffer_info = {
     'GetError':                              { 'parameters': { 3: { 'size': {'mechanism':'ivi-dance', 'value':'bufferSize'}, }, }, },
+    'GetErrorMessage':                       { 'parameters': { 3: { 'size': {'mechanism':'ivi-dance', 'value':'bufferSize'}, }, }, },
     'GetAttributeViString':                  { 'parameters': { 4: { 'size': {'mechanism':'ivi-dance', 'value':'bufferSize'}, }, }, },
     'ReturnANumberAndAString':               { 'parameters': { 2: { 'size': {'mechanism':'fixed', 'value':256}, }, }, },
     'GetAStringOfFixedMaximumSize':          { 'parameters': { 1: { 'size': {'mechanism':'fixed', 'value':256}, }, }, },
@@ -81,6 +83,7 @@ functions_buffer_info = {
 functions_is_error_handling = {
     'error_message':                { 'is_error_handling': True, },
     'GetError':                     { 'is_error_handling': True, },
+    'GetErrorMessage':              { 'is_error_handling': True, },
 }
 
 # Default values for method parameters
