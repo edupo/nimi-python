@@ -6,6 +6,12 @@
 # We also do not codegen enums associated with P2P or External Calibration since neither 
 # are supported in Python
 enums_codegen_method = {
+    'DigitsResolution': {'codegen_method': 'no', },  # Enum metadata actually contains constants. Also need to remove to generate valid code
+    'PowerlineFrequency': {'codegen_method': 'no', }, # Enum metadata actually contains constants.
+    'CurrentSource': {'codegen_method': 'no', }, # Enum metadata actually contains constants.
+    'InputResistance': {'codegen_method': 'no', }, # Enum metadata actually contains constants.
+    'DCBias': {'codegen_method': 'no', },  # Delete because boolean values only
+    'OffsetCompensatedOhms': {'codegen_method': 'no', },  # Delete because boolean values only
 }
 
 enums_additional_enums = {
