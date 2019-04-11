@@ -34,7 +34,8 @@ enums = {
     'AcquisitionStatus': {
         'values': [
             {
-                'name': 'RUNNING',
+                'name': 'RUNNING_ANTICOLLISION',
+                'python_name': 'RUNNING',
                 'value': 0,
 'documentation': {
 'description': 'Running',
