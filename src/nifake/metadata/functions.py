@@ -48,7 +48,7 @@ functions = {
                 'direction': 'in',
                 'enum': None,
                 'name': 'optionString',
-                'type': 'ViString',
+                'type': 'ViConstString',
                 'documentation': {
                     'description': 'Some options',
                 },
