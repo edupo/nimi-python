@@ -29,6 +29,7 @@ config = {
     'custom_types': [],
     'last_tested_version': '18.1.0',
     'repeated_capabilities': [],
+    'upper_acronyms': ['ADC', 'LC', 'RTD', 'DC', ],
 }
 
 
