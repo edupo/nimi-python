@@ -30,5 +30,6 @@ config = {
         {'python_name': 'script_triggers', 'prefix': 'ScriptTrigger', },
         {'python_name': 'markers', 'prefix': 'Marker', },
     ],
+    'upper_acronyms': ['FIR', ],
 }
 
