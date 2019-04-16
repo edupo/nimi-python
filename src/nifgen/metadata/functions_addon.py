@@ -223,9 +223,10 @@ after the function runs.
             {
                 'direction': 'in',
                 'name': 'waveformDataArray',
-                'type': 'ViReal64[]',  #TODO(marcoskirsch): Don't care, except for documentation
+                'type': 'ViReal64[]',
+                'type_in_documentation': 'iterable of float or int16',
                 'documentation': {
-                    'description': 'Array of data for the new arbitrary waveform. This may be an iterable of float, or for best performance a numpy.ndarray of dtype int16 or float64.',
+                    'description': 'Array of data for the new arbitrary waveform. This may be an iterable of float or int16, or for best performance a numpy.ndarray of dtype int16 or float64.',
                 },
             },
             {
