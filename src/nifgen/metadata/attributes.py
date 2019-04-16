@@ -82,7 +82,7 @@ Use niFgen_InitWithOptions to override default value.
     },
     1050007: {
         'access': 'read only',
-        'channel_based': False,
+        'channel_based': 'False',
         'enum': None,
         'lv_property': '',
         'name': 'DRIVER_SETUP',
