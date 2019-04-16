@@ -246,7 +246,8 @@ Returns a string that contains a comma-separated list of class-extention groups 
         'access': 'read only',
         'channel_based': 'False',
         'lv_property': 'Instrument:Obsolete:Major Version',
-        'name': 'MAJOR_VERSION',
+        'name': 'SPECIFIC_DRIVER_MAJOR_VERSION',
+        'python_name': 'major_version',
         'resettable': 'No',
         'type': 'ViInt32',
 'documentation': {
@@ -257,7 +258,8 @@ Returns a string that contains a comma-separated list of class-extention groups 
         'access': 'read only',
         'channel_based': 'False',
         'lv_property': 'Instrument:Obsolete:Minor Version',
-        'name': 'MINOR_VERSION',
+        'name': 'SPECIFIC_DRIVER_MINOR_VERSION',
+        'python_name': 'minor_version',
         'resettable': 'No',
         'type': 'ViInt32',
 'documentation': {
