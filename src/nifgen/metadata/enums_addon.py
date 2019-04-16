@@ -11,11 +11,16 @@ enums_codegen_method = {
 
 enums_override_values = {
     'ReferenceClockSource': { 'values': {
-        0: { 'name': 'NIFGEN_VAL_CLOCK_IN', },
-        1: { 'name': 'NIFGEN_VAL_NONE', },
-        2: { 'name': 'NIFGEN_VAL_ONBOARD_REFERENCE_CLOCK', },
-        3: { 'name': 'NIFGEN_VAL_PXI_CLOCK', },
-        4: { 'name': 'NIFGEN_VAL_RTSI_7', },
+        0: { 'name': 'NIFGEN_VAL_CLOCK_IN_COLLISION_AVOIDANCE',
+             'python_name': 'CLOCK_IN', },
+        1: { 'name': 'NIFGEN_VAL_NONE_COLLISION_AVOIDANCE',
+             'python_name': 'NONE', },
+        2: { 'name': 'NIFGEN_VAL_ONBOARD_REFERENCE_CLOCK_COLLISION_AVOIDANCE',
+             'python_name': 'ONBOARD_REFERENCE_CLOCK', },
+        3: { 'name': 'NIFGEN_VAL_PXI_CLOCK_COLLISION_AVOIDANCE',
+             'python_name': 'PXI_CLOCK', },
+        4: { 'name': 'NIFGEN_VAL_RTSI_7_COLLISION_AVOIDANCE',
+             'python_name': 'RTSI_7', },
     }, },
     'SampleClockSource': { 'values': {
         0: { 'name': 'NIFGEN_VAL_CLOCK_IN', },
